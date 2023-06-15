@@ -1,0 +1,307 @@
+body {
+    background-color: #ebe9d2;
+    font-family: "Montserrat", "Allura";
+}
+
+.navbar {
+    background-color: #aab486;
+}
+
+.navbar-logo img {
+    width: 4rem;
+}
+
+.nav-item {
+    font-size: 25px;
+    padding-left: 25px;
+}
+
+.dropdown-menu {
+    background-color: #aab486;
+    border: none;
+}
+
+.dropdown-item {
+    padding: 10px;
+}
+
+.dropdown-item:hover {
+    background-color: #b3bc8f;
+}
+
+header .quote {
+    background-image: url(../img/forest.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.idezet {
+    font-family: "Allura";
+}
+
+header .dog-hiking {
+    background-image: url(../img/dog_hiking.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+header .rafting {
+    background-image: url(../img/water_hiking.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+header .camping {
+    background-image: url(../img/camping.jpeg);
+    background-position: center center;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+header .bicycle {
+    background-image: url(../img/bicikli_hiking.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+header .mountain {
+    background-image: url(../img/mountain_hiking.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+header .gallery {
+    background-image: url(../img/Gallery/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+header .contactUs {
+    background-image: url(../img/contactUs/contactUs.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+header .links {
+    background-image: url(../img/links-header.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.dog-hiking h1 {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.rafting h1 {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.camping h1 {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bicycle h1 {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.mountain h1 {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.links h1 {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+header {
+    color: #2e5240;
+}
+
+.blockquote {
+    background-color: rgba(255, 255, 255, 0.38);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+figcaption {
+    background-color: rgba(255, 255, 255, 0.35);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.dog {
+    background-image: url(../img/dog_hiking.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+ol.camping {
+    list-style-image: url(../img/camping//afaf68c4-6918-4d4c-8469-08f9ec1bc398.png);
+}
+
+ol li {
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.mountain li {
+    list-style-type: circle;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+h4 {
+    text-align: center;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+button>a {
+    text-decoration: none;
+    color:black;    
+}
+
+button>a:hover {
+    color:black;    
+}
+
+.card>img {
+    max-height: 40%;
+}
+
+.carousel .carousel-inner {
+    height: 600px
+}
+
+.carousel-inner .carousel-item img {
+    min-height: 200px;
+    object-fit: cover;
+    position: center;
+}
+
+@media(max-width:768px) {
+    .carousel .carousel-inner {
+        height: auto
+    }
+}
+
+/* Itt van a galéria lightbox része */
+
+.photo-gallery {
+    color: #313437;
+    background-color: #fff;
+}
+
+.photo-gallery p {
+    color: #7d8285;
+}
+
+.photo-gallery h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+}
+
+@media (max-width:767px) {
+    .photo-gallery h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
+    }
+}
+
+.photo-gallery .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 40px;
+}
+
+.photo-gallery .intro p {
+    margin-bottom: 0;
+}
+
+.photo-gallery .photos {
+    padding-bottom: 20px;
+}
+
+.photo-gallery .item {
+    padding-bottom: 30px;
+}
+
+table td:nth-child(2) {
+    width: 20%;
+}
+
+table td:nth-child(3) {
+    width: 30%;
+}
+
+.links a {
+    text-decoration: none;
+    color: #2e5240;
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: #3e6c55;
+}
+
+.btn-info {
+    background-color: #2e5240;
+    border: none;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #3e7057;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #2e5240;
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #3e7057;
+    color: white;
+}
+
+.progress {
+    height: 30px;
+    margin: 20px;
+}
+
+.progress-bar {
+    background-color: #2e5240;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #aab486;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover .fa-twitter {
+    color: rgb(113, 201, 231);
+}
+
+footer a:hover .fa-youtube {
+    color: red;
+}
+
+h3 {
+    text-align: center;
+}

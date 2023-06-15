@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Frissülj fel egy túrával!">
+    <meta name="keywords"
+        content="rafting, camping, bicycle, dog, dog hiking, mountains, mountain, hiking, hike, nature, forest, water, lake, program, team">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/811f543052.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Allura">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Főoldal</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md position-fixed w-100">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand navbar-logo" href="index.html"><img src="img/menu.png" alt="Nature"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html"><i
+                                class="fa-solid fa-house-chimney"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kutya" title="Kutyás túra"><i
+                                class="fa-solid fa-paw"></i></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#viz" title="Vízközeli túra"><i
+                                class="fa-solid fa-water"></i></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#camping" title="Campinges túra"><i
+                                class="fa-solid fa-campground"></i></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#bicikli" title="Biciklis túra"><i
+                                class="fa-solid fa-person-biking"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hegy" title="Hegyközeli túra"><i
+                                class="fa-solid fa-mountain-sun"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a class="nav-link" aria-current="page"
+                                    href="gallery.html">Galéria</a></li>
+                            <li class="dropdown-item"><a class="nav-link" aria-current="page"
+                                    href="contact.html">Kapcsolat</a></li>
+                            <hr class="dropdown-divider">
+                            <li class="dropdown-item"><a class="nav-link" aria-current="page"
+                                    href="linkek.html">Információk</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="py-5">
+        <div class="container px-lg-5">
+            <div class="p-4 p-lg-5 bg-light rounded-3 text-center quote">
+                <div class="m-4 m-lg-5">
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p class="idezet fs-2">"A természet az igazi gyógyító. Az erdőben, a mezőn, a hegyekben
+                                járva, az ember nemcsak testileg, hanem lelkileg is feltöltődik, és megtalálja békéjét."
+                            </p>
+                        </blockquote>
+                        <figcaption class="idezet blockquote-footer fs-3">
+                            John Muir
+                        </figcaption>
+                    </figure>
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Regisztrálok a túrára!
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Jelentkezés</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingInput" placeholder="Név"
+                                                required>
+                                            <label for="floatingInput">Név</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="floatingInput"
+                                                placeholder="Email" required>
+                                            <label for="floatingInput">Email</label>
+                                        </div>
+                                        <label for="touroption">Melyik túra érdekel?</label>
+                                        <select class="form-select mb-3" aria-label="Default select example"
+                                            name="touroption">
+                                            <option disabled selected value>Kérlek válassz!</option>
+                                            <option value="1">Kutyás túra</option>
+                                            <option value="2">Vízközeli túra</option>
+                                            <option value="3">Campinggel egybekötött túra</option>
+                                            <option value="4">Biciklis túra</option>
+                                            <option value="5">Hegyközeli túra</option>
+                                        </select>
+                                        <label for="customRange2" class="form-label">Hányan jönnétek?</label>
+                                        <input type="range" class="form-range" min="1" max="10" id="customRange2">
+                                        <div class="modal-footer">
+                                            <input type="reset" class="btn btn-danger" value="Törlés">
+                                            <input type="submit" class="btn btn-primary" value="Elküld">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="row m-4">
+        <div class="col-md-6">
+            <img src="img/dog_hiking.jpg" alt="Rafting" class="img-fluid rounded-5">
+        </div>
+        <div class="col-md-6 text-center mt-4" id="kutya">
+            <h1 class="display-6 text-uppercase">Kutyás túrák</h1>
+            <p>A kutyatulajdonosok számára nagyszerű élmény lehet a természetben való túrázás
+                a kedvencükkel. Számos olyan túrahely létezik, ahol a kutyák szívesen sétálnak és felfedezik az új
+                környezetet. A legtöbb állami parkban és erdőben lehetőség van a kutyákkal való kirándulásra, de
+                érdemes előzetesen utánajárni, hogy mely területeken engedélyezett a kutyák jelenléte. Számos
+                kutyabarát túrahely kínál hosszabb vagy rövidebb sétákat, ahol a kutyusok szabadon szaladgálhatnak,
+                úszhatnak, vagy akár külön erre kialakított agility pályákon is kipróbálhatják ügyességüket. Fontos
+                azonban, hogy mindig tartsuk be az adott terület szabályait, és gondoskodjunk arról, hogy a kutyánk
+                biztonságban legyen az egész túra során.
+            </p>
+            <a href="dog_hiking.html" class="btn btn-info">Tovább olvasom!</a>
+        </div>
+        <div class="col-md-6 mt-4">
+            <img src="img/water_hiking.jpg" alt="Rafting" class="img-fluid rounded-5">
+        </div>
+        <div class="col-md-6 text-center mt-4" id="viz">
+            <h1 class="display-6 text-uppercase">Vízközeli túrák</h1>
+            <p>Ha szereted a víz közelségét és az aktív pihenést, akkor a vízi túrázás remek választás lehet számodra.
+                Számos olyan vízi túrahely létezik, ahol kajakozhatsz, kenuzhatsz, vagy akár SUPozhatsz is. Ezek az
+                élmények nem csak kellemes kikapcsolódást nyújtanak, de közben lehetőséged van felfedezni az adott
+                terület különleges látványosságait, amikre szárazföldről nem mindig van lehetőség. A vízi túrázás során
+                megfigyelheted a környező természet élővilágát, vagy akár eljuthatsz olyan helyekre is, ahova csak
+                hajóval lehet eljutni. A legtöbb vízi túrahelyen lehetőség van hajóbérlésre, vagy akár vezetett túrákra
+                is csatlakozhatsz. Ne felejts azonban el előre tájékozódni a vízviszonyokról, az időjárásról és a
+                biztonsági előírásokról, hogy teljes biztonságban élvezhesd a vízi túrák nyújtotta élményeket.
+            </p>
+            <a href="rafting.html" class="btn btn-info">Tovább olvasom!</a>
+        </div>
+        <div class="col-md-6 mt-4" id="camping">
+            <img src="img/camping.jpeg" alt="Camping" class="img-fluid rounded-5">
+        </div>
+        <div class="col-md-6 text-center mt-4">
+            <h1 class="display-6 text-uppercase">Camping túrák</h1>
+            <p>Ha szereted a természetet, és az igazi kihívásokat, akkor a camping túra valószínűleg a Te sportod. A
+                camping túrázás során lehetőséged van eltávolodni a város zajától, és élvezni a friss levegőt és a
+                természeti környezetet. A camping túrázás általában magában foglalja a sátorozást, a túrázást és a
+                vadonban való éjszakázást. A legtöbb camping helyen lehetőséged van tábortüzet rakni, így meleg ételt
+                készíteni és éjszakai táborozás során is kellemes meleget tartani. Azonban fontos megjegyezni, hogy a
+                camping túra a természetben való tartózkodást jelenti, ezért nagyon fontos, hogy az adott terület
+                szabályait betartsuk és környezettudatosan viselkedjünk. Ne hagyjunk magunk után szemetet, és ügyeljünk
+                arra, hogy ne zavarjuk a természeti környezetet. A camping túrázás igazi kihívást jelenthet, de az
+                élmény és a természettel való kapcsolat, amit általa megszerezhetsz, megéri az erőfeszítést.
+            </p>
+            <a href="camping.html" class="btn btn-info">Tovább olvasom!</a>
+        </div>
+        <div class="col-md-6 mt-4" id="bicikli">
+            <img src="img/bicikli_hiking.jpg" alt="Biciklis" class="img-fluid rounded-5">
+        </div>
+        <div class="col-md-6 text-center mt-4">
+            <h1 class="display-6 text-uppercase">Biciklis túrák</h1>
+            <p>A biciklis túra egy fantasztikus módja annak, hogy felfedezd a környezetedet és élvezd a szabadban
+                töltött időt. Ha szeretsz tekerés közben friss levegőt szívni, akkor egy biciklis túra tökéletes
+                választás lehet számodra. A túra lehet rövid vagy hosszabb távú, attól függően, hogy milyen kondícióban
+                vagy és mennyi időd van. Érdemes előre tervezni, milyen útvonalat fogsz követni, és készíteni némi
+                uzsonnát, vagy akár pikniket a pihenőhelyeken. Ne felejtsd el felvenni a sisakod és a
+                védőfelszereléseidet, hogy biztonságosan tekerhess!
+            </p>
+            <a href="bicycle.html" class="btn btn-info">Tovább olvasom!</a>
+        </div>
+        <div class="col-md-6 mt-4" id="hegy">
+            <img src="img/mountain_hiking.jpg" alt="Mountain hiking" class="img-fluid rounded-5">
+        </div>
+        <div class="col-md-6 text-center mt-4">
+            <h1 class="display-6 text-uppercase">Hegyi túrák</h1>
+            <p>A hegyi túra egy kalandos és izgalmas tevékenység, amely során az emberek gyönyörű tájakat fedezhetnek
+                fel a hegyekben. A túrázók általában gyalogolnak, másznak vagy kaptatnak a hegyoldalakon, hogy
+                eljussanak a csúcsra, ahonnan lenyűgöző kilátás nyílik a környékre. A hegyi túrák során a természet
+                közelségében érezhetjük magunkat, és megtapasztalhatjuk a természet szépségét és erejét. Azonban fontos,
+                hogy a túrázók megfelelően felkészüljenek, és a biztonságuk érdekében kövessék a túraútvonalon előírt
+                szabályokat és biztonsági előírásokat.
+            </p>
+            <a href="mountain.html" class="btn btn-info">Tovább olvasom!</a>
+        </div>
+    </div>
+    <footer class="py-5">
+        <div class="container">
+            <p class="m-0 text-center text-white">Minden jog fenntartva! &copy; 2023 - Kökény Dániel</p>
+            <p class="text-center fs-4">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook p-2"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter p-2"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin p-2"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube p-2"></i></a>
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
